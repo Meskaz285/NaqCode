@@ -25,25 +25,18 @@ public class MainActivity extends AppCompatActivity {
         username= findViewById(R.id.username);
         password= findViewById(R.id.password);
         loginButton= findViewById(R.id.loginButton);
-        signupText= findViewById(R.id.signupText);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(username.getText().toString().equals("user")&&password.getText().toString().equals("1234")){
                     Toast.makeText(MainActivity.this,"Login Successful", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(v.getContext(), PageActivity.class);
+                    startActivity(i);
                 }
                 else {
                     Toast.makeText(MainActivity.this,"Login Failed", Toast.LENGTH_SHORT).show();
                 }
-            }
-        });
-
-        signupText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(v.getContext(), SignupActivity.class);
-                startActivity(i);
             }
         });
 
