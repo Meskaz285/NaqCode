@@ -33,8 +33,11 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this,"Login Successful", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(v.getContext(), PageActivity.class);
                     startActivity(i);
-                }
-                else {
+                } else if (username.getText().toString().equals("admin")&&password.getText().toString().equals("1234")) {
+                    Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(v.getContext(), AdminActivity.class);
+                    startActivity(i);
+                }else {
                     Toast.makeText(MainActivity.this,"Login Failed", Toast.LENGTH_SHORT).show();
                 }
             }

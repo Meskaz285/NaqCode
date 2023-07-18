@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:text="Report"
                 android:textSize="50sp"
-                android:textColor="@color/c12"
+                android:textColor="@color/c8"
                 android:textStyle="bold"
                 android:textAlignment="center"/>
             <TextView
@@ -45,28 +45,28 @@
                 android:layout_height="wrap_content"
                 android:text="Due Amount: Rs 500"
                 android:textSize="36sp"
-                android:textColor="@color/c12"
+                android:textColor="@color/c8"
                 android:textAlignment="textStart"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="From:   15/07/2023"
                 android:textSize="36sp"
-                android:textColor="@color/c12"
+                android:textColor="@color/c8"
                 android:textAlignment="textStart"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="To:     15/08/2023"
                 android:textSize="36sp"
-                android:textColor="@color/c12"
+                android:textColor="@color/c8"
                 android:textAlignment="textStart"/>
             <Button
                 android:id="@+id/backButton"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="40dp"
-                android:backgroundTint="@color/c12"
+                android:backgroundTint="@color/c8"
                 android:text="Back"
                 android:textSize="36sp"
                 app:cornerRadius="20dp" />
